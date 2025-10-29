@@ -1,0 +1,1147 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    perspective: 400px;
+}
+.meow-script-regular {
+  font-family: "Meow Script", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+.ruge-boogie-regular {
+  font-family: "Ruge Boogie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.25s;
+    color: rgb(43, 43, 43);
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Fira Sans", sans-serif;
+}
+
+header a {
+    color: black;
+}
+
+.head-container {
+    width: 100%;
+    height: 100%;
+}
+
+.header-top {
+    width: 85%;
+    height: 32%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.header-top a {
+    padding: 2px 10px;
+    font-weight: 400;
+}
+
+.header-top li:hover a {
+    color: #719090;
+}
+
+.header-top li {
+    display: inline-block;
+    margin: 0px 1px;
+}
+
+.la {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.lin {
+    height: 20px;
+    width: 2px;
+    position: absolute;
+}
+
+.lin2 {
+    right: 0;
+}
+
+.lin1::after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 100%;
+    bottom: 0;
+    background-color:#8ABABA;
+    transition: 1s;
+}
+
+.header-top li:hover .lin1::after{
+    width: 100%;
+    height: 100%;
+}
+
+.lin2::after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 100%;
+    top: 0;
+    background-color:#8ABABA;
+    transition: 1s;
+}
+
+.header-top li:hover .lin2::after{
+    width: 100%;
+    height: 100%;
+}
+
+.head-top-right ul{
+    display: inline;
+}
+
+.head-top-right .list2 .la:hover a {
+    transform: rotateY(180deg);
+}
+
+.divider {
+    height: 0.5px;
+    width: 100%;
+    background-color: rgb(57, 57, 57);
+}
+
+.header-main {
+    width: 85%;
+    height: 67%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main li {
+    display: inline-block;
+    margin: 0px 2px;
+}
+
+.left-head {
+    height: 70%;
+}
+
+.left-head img {
+    height: 100%;
+    width: auto;
+    margin-left: 6px;
+}
+
+.mid-head li {
+    width: auto; /*i don't why auto in itself doesn't give the lado width and only works if i wrote it in px*/
+    /* background-color: rgb(176, 249, 249); */
+    
+}
+
+.mid-head a {
+    padding: 12px;
+    font-size: 15px;
+    width: auto
+    /* background-color: #e5e8e8; */
+}
+
+.mid-head a:hover {
+    color: #8ABABA;
+}
+
+.linn {
+    height: 42px;
+    width: 2px;
+    position: absolute;
+}
+
+.linn2 {
+    right: 0px;
+}
+
+.down {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.lado {
+    height: 2px;
+    position: absolute;
+    z-index: 2;
+}
+
+.lado0 {
+    bottom: 0px;
+}
+
+.lado1 {
+    width: 53px;
+}
+
+.lado2 {
+    width: 64px
+}
+
+.lado3 {
+    width: 53px
+}
+
+.lado4 {
+    width: 75px;
+}
+
+.lado5 {
+    width: 73px
+}
+
+.lado6 {
+    width: 74px;
+}
+
+.linn::after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 100%;
+    bottom: 0;
+    background-color:#8ABABA;
+    transition: 0.75s;
+}
+
+.mid-head li:hover .linn::after{
+    width: 100%;
+    height: 100%;
+}
+
+.lado::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 0%;
+    left: 0;
+    background-color: #8ABABA;
+    transition: 0.75s;
+}
+
+.mid-head li:hover .lado::after{
+    width: 100%;
+    height: 100%;
+}
+
+.arr {
+    transform: rotate(90deg) translate(-2px, 0px);
+    color: black;
+    margin-left: 5px;
+    font-size: 11px;
+    transition: 0.25s;
+}
+
+.mid-head li:hover .arr {
+    color:#8ABABA
+}
+
+.right-head a {
+    font-size: 17px;
+    margin: 0px 6px 0px 8px ;
+}
+
+.right-head a:hover {
+    color: #8ABABA;
+}
+
+.number {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    position: absolute;
+    right: 107px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.right-head a:hover .number {
+    top: 37px;
+}
+
+.promo {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.promo p {
+    padding: 1.5vh;
+    font-size: 15px;
+}
+
+.promo a {
+    color: rgb(182, 172, 172);
+    color: #8ABABA;
+    text-decoration: underline;
+}
+
+.promo a:hover {
+    letter-spacing: 1px;
+}
+
+.hero-banner {
+    height: 90vh;
+    width: 100%;
+    background: bisque url(../images/hero15.jpg) no-repeat bottom ; /*hero8 hero15*/
+    background-size: cover;
+}
+
+.hero-container {
+    text-align: center;
+    width: 28%;
+    transform: translate(45%, 50%);
+}
+
+.hero-container h3 {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Meow Script", cursive;
+    color: red;
+    color: #8ABABA;
+}
+
+.hero-container h2 {
+    font-size: 34px;
+    margin: 10px 0px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.hero-container p {
+    color: grey;
+    line-height: 23px;
+    margin-top: 20px;
+}
+
+.btn1 {
+    padding: 15px 25px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 17px;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin: 25px;
+    transition: all 0.75s; /* the transitio here means that it will take time when i enter the button and when i leave unlike if it was in the 
+    hover part it will only happen when i enter and i can even do this --> transition: background-color 1s ease-in-out;
+    */
+}
+
+.btn1:hover {
+    background-color: white;
+    color: black;
+}
+
+.categories {
+    height: 70vh;
+    background-color: rgb(247, 247, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories-container {
+    width: 85%;
+}
+
+.categories-parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.categories .item {
+    width: 30%;
+    height: 78%;
+    background-color: #b8bcbc;
+    position: relative;
+}
+
+.categories .item1 {
+    background: url(../images/hero11.jpg) no-repeat bottom;
+    background-size: cover;
+}
+
+.categories .item2 {
+    background: url(../images/hero11.jpg) no-repeat bottom;
+    background-size: cover;
+}
+
+.categories .item3 {
+    background: url(../images/hero11.jpg) no-repeat bottom;
+    background-size: cover;
+}
+
+.categories .item:hover {
+    transform: translateZ(50px);
+}
+
+.categories-container {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+}
+
+.grad {
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(bottom, black, white, white, white);
+    opacity: 0.5;
+}
+
+.categories h2 {
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: 50px;
+}
+
+.categories a {
+    position: absolute;
+    text-decoration: underline;
+    color: #c3c3c3;
+    font-size: 19px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: 10px;
+}
+
+.categories a:hover {
+    letter-spacing: 1px;
+}
+
+.trending {
+    height: 100vh;
+}
+
+.trending-container {
+    width: 87%;
+    height: 90%;
+    margin: auto;
+}
+
+.trending .top-part {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3%;
+}
+
+.trending .top-part h2 {
+    text-transform: capitalize;
+    font-size: 31px;
+}
+
+.trending .top-part ul li {
+    display: inline-block;
+}
+
+.trending .top-part a {
+    margin-left: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.trending .top-part .right {
+    padding-top: 1%;
+}
+
+.trending .bottom-part {
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trending-content {
+    width: 97%;
+    height: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trending .item {
+    width: 23%;
+    height: 90%;
+}
+
+.trending .item .image {
+    height: 75%;
+}
+
+.trending .item .image1 {
+    background: url(../images/mr1.jpg) top;
+    background-size: cover;
+}
+
+.im1 {
+    background: url(../images/mr2.jpg) center;
+    background-size: cover;
+}
+
+.trending .item .image2 {
+    background: url(../images/mr3.jpg) top;
+    background-size: cover;
+}
+
+.im2 {
+    background: url(../images/mr4.jpg) center;
+    background-size: cover;
+}
+
+.trending .item .image3 {
+    background: url(../images/mr5.jpg) top;
+    background-size: cover;
+}
+
+.im3 {
+    background: url(../images/mr6.jpg) center;
+    background-size: cover;
+}
+
+.trending .item .image4 {
+    background: url(../images/mirror8.jpg) center;
+    background-size: cover;
+}
+
+.im4 {
+    background: url(../images/mirr1.jpg) center;
+    background-size: cover;
+}
+
+.trending .item .text {
+    height: 25%;
+}
+
+.item:hover h3 a {
+    color:red
+}
+
+.trending .item h3, .maylike .item h3 {
+    text-align: center;
+    font-weight: 300;
+    margin: 30px 0px 15px 0px;
+}
+
+.trending .item h4, .maylike .item h4 { /*usint text align on this when the tags where p and class is .item-p aint't working for some reasong only worked when i changes the tags to h4 and called it by nesting*/
+    text-align: center;
+    color: grey;
+    font-size: 19px;
+    font-weight: 200;
+}
+
+.item h4 span {
+    text-decoration: line-through;
+    color: rgb(65, 65, 65);
+}
+
+.image {
+    perspective: 900px;
+    position: relative;
+}
+
+.im {
+    transform-style: preserve-3d;
+    background-color: #6a6e6e;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    backface-visibility: visible;
+}
+
+.item:not(:hover) .im {
+    transform: rotateY(90deg);
+}
+
+.testemonial {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cbd9d9;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.testemonial-container {
+    width: 85%;
+    height: 75%;
+}
+
+.head-test {
+    height: 20%;
+    text-align: center;
+}
+
+.head-test h2 {
+    font-size: 28px;
+}
+
+.content-test {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 19px;
+}
+
+.l-arrow {
+    transform: rotateY(180deg);
+}
+
+.arrow a {
+    color:rgb(110, 110, 110)
+}
+
+.arrow:hover a {
+    color: black;
+}
+
+.testemonial .content {
+    width: 63%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testemonial .content p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.person {
+    width: 26%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person .photo {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: #8ABABA;
+    background: url(../images/people/person3.jpg);
+    background-size: cover;
+}
+
+.person .name .namep {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.person .name .workp {
+    text-align: left;
+    font-size: 15px;
+}
+
+.maylike {
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.maylike-container {
+    width: 89%;
+    height: 80%;
+}
+
+.head-maylike {
+    height: 15%;
+    text-align: center;
+}
+
+.head-maylike h2 {
+    font-size: 28px;
+}
+
+.content-maylike {
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maylike .content {
+    width: 97%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maylike .content .item {
+    width: 23%;
+    height: 90%;
+}
+
+.maylike .image {
+    height: 75%;
+}
+
+.image {
+    position: relative;
+}
+
+.maylike .image::after {
+    content: '';
+    position: absolute;
+    background-color: #6a6e6e;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    opacity: 0.05;
+    transition: 1s;
+}
+
+.maylike .item:hover .image::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.maylike .image1 {
+    background: url(../images/vas1.jpg) center;
+    background-size: cover;
+}
+
+.maylike .image1::after {
+    background: url(../images/vas2.jpg) center;
+    background-size: cover;
+}
+
+.maylike .image2 {
+    background: url(../images/chaa2.jpg) bottom;
+    background-size: cover;
+}
+
+.maylike .image2::after {
+    background: url(../images/chaa.jpg) center; 
+    background-size: cover;
+}
+
+.maylike .image3 {
+    background: url(../images/m1.jpg) top;
+    background-size: cover;
+}
+
+.maylike .image3::after {
+    background: url(../images/m3.jpg) center; 
+    background-size: cover;
+}
+
+.maylike .image4 {
+    background: url(../images/couch.jpg) center;
+    background-size: cover;
+}
+
+.maylike .image4::after {
+    background: url(../images/couch2.jpg) center; 
+    background-size: cover;
+}
+
+.maylike .text {
+    height: 25%;
+}
+
+.rec {
+    z-index: 100;
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.item:hover .rec {
+    animation-name: recc;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.item:not(:hover) .rec {
+    animation-name: recb;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes recc {
+    0% {
+        bottom: 10px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 25px;
+        opacity: 1;
+    }
+}
+
+@keyframes recb {
+    0% {
+        bottom: 25px;
+        opacity: 1;
+    }
+    100% {
+        bottom: 10px;
+        opacity: 0;
+    }
+}
+
+.rec i {
+    padding: 10px;
+    background-color: white;
+}
+
+.rec i:hover {
+    background-color:#8ABABA;
+    transition: background-color 1.5s;
+}
+
+.rec a {
+    color: black;
+}
+
+.rec .ii:hover a {
+    animation-name: ico;
+    animation-duration: 0.1s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ico {
+    0% {
+        color: #cecece;
+    }
+    40% {
+        color: #8ABABA;
+    }
+    100% {
+        color: #ffffff;
+    }
+}
+
+.latest-news {
+    height: 100vh;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #CBD9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-news-container {
+    width: 87%;
+    height: 93%;
+}
+
+.head-latest-news {
+    height: 7%;
+    text-align: center;
+}
+
+.head-latest-news h2 {
+    font-size: 28px;
+}
+
+.content-latest-news {
+    height: 93%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.latest-news .item {
+    width: 29%;
+    height: 90%;
+}
+
+.latest-news .image {
+    height: 65%;
+    transition: 0.5s;
+    transform-origin: bottom;
+}
+
+.latest-news .image1 {
+    background: url(../images/Make\ the\ colors\ in\ t.png) center;
+    background-size: cover;
+}
+
+.latest-news .image2 {
+    background: url(../images/copilor/Create\ a\ new\ version.png) center;
+    background-size: cover;
+}
+
+.latest-news .image3 {
+    background: url(../images/copilor/Replace\ the\ chai.png) center;
+    background-size: cover;
+}
+
+.latest-news .image:hover {
+    transform: scale(1.05);
+}
+
+.latest-news .text {
+    height: 35%;
+}
+
+.latest-news .text .p1 {
+    color: grey;
+    font-size: 15px;
+    margin: 13px 0px;
+}
+
+.latest-news .text .p2 {
+    color: grey;
+    font-size: 17px;
+    margin: 13px 0px;
+}
+
+.latest-news .text h3 {
+    font-weight: 100;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.latest-news .text .a1 {
+    font-size: 20px;
+    text-decoration: underline;
+    color: black;
+    margin-top: 10px;
+}
+
+.latest-news .text .a1:hover {  /* i will leave this in case i wanted to change the red color in the itmes before andn leave this red */
+    font-size: 21px;
+}
+
+.latest-news .item:hover h3 a {
+    color:red
+}
+
+.services {
+    height: 36vh;
+}
+
+footer {
+    height: 76vh;
+    background-color: rgb(23, 22, 19);
+}
+
+.footer-container {
+    width: 85%;
+    height: 100%;
+    /* background-color: #7c8e8e81; */
+    margin: auto;
+}
+
+.foot-up {
+    height: 24%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-foot {
+    color: white;
+}
+
+.left-foot .p1 {
+    padding: 15px 0px;
+    font-size: 25px;
+}
+
+.left-foot .p2 {
+    font-size: 15px;
+}
+
+.mid-foot input {
+    font-size: 18px;
+    width: 68%;
+    padding: 10px 25px;
+}
+
+.mid-foot button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #719090;
+    color: white;
+}
+
+.mid-foot button:hover {
+    transform: scale(1.1);
+}
+
+.right-foot a {
+    color: #6a6e6e;
+    font-size: 22px;
+}
+
+.right-foot a:hover {
+    color: white;
+    font-size: 23px;
+}
+
+.right-foot i {
+    margin-left: 10px;
+}
+
+.foot-mid {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column1 {
+    width: 15%;
+    height: 65%;
+}
+
+.column1 img {
+    width: 95%;
+}
+
+.column2 {
+    height: 63%;
+    color: white;
+}
+
+.column2 ul {
+    list-style-type: none;
+}
+
+.column2 h2 {
+    padding-bottom: 18px;
+    font-size: 22px;
+}
+
+.column2 li {
+    margin-bottom: 6px;
+}
+
+.column2 a {
+    color: rgb(162, 162, 162);
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.column2 a:hover {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.foot-down {
+    height: 15%;
+    width: 100%;
+}
+
+.divider-light {
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+}
+
+.foot-down {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-down .heart{
+    animation-name: movingheart;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color:#8ABABA;
+}
+
+@keyframes movingheart {
+    0% {
+        opacity: 0;
+        font-size: 10px;
+    }
+
+    100% { 
+        opacity: 1;
+        font-size: 16px;
+    }
+}
+
+.foot-down a {
+    color:#8ABABA;
+    text-transform: capitalize;
+}
+
+.foot-down a:hover {
+    text-decoration: underline;
+    letter-spacing: 1px;
+}

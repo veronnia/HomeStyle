@@ -1,0 +1,80 @@
+🖼️ Hero Banner
+- Image: A beautifully styled shelf, cozy corner, or wall art
+- Text:
+“Style Your Space with Personality”
+Tagline: “Discover decor that speaks your vibe.”
+Button: “Shop Now”
+🗂️ Categories
+- Wall Art
+- Lighting
+- Rugs
+- Mirrors
+- Planters
+🔥 Trending This Week
+- “Boho Macrame Wall Hanging – $39”
+- “Industrial Pendant Lamp – $89”
+- “Minimalist Round Mirror – $59”
+💡 You May Like
+- Curated picks based on style: “Scandi Essentials,” “Earthy Tones,” “Bold Accents”
+📰 Latest News / Blog
+- “Top 10 Decor Trends for 2025”
+- “How to Style Your Entryway Like a Pro”
+👥 Testimonials
+- “The rug transformed my living room—great quality and fast delivery!”
+📞 Footer
+- Contact info, social links, and copyright
+
+
+
+/* ________________________________________________________________________________________________ 9 parts in total
+
+FIRST PART
+----------------------------------------------------------------------------------------               --------------------       
+|      li li li li                                          li li icn icn icn icn      | --> top bar   | pages     blog   | --> window
+----------------------------------------------------------------------------------------               | _____     ____   |    
+|      |-----------|                                                          (n)      |               | option    option |
+|      |logo & name|                li li li li li^ li                icn icn icn      | --> header    | option    option |
+|      |-----------|                                                                   |               | option    option |
+----------------------------------------------------------------------------------------               --------------------
+Animations and motions
+top bar
+    1- li li li li:        2 pseudo elements moves opposite at the left and right side 'linked'
+    2- li li:              same for them 'linked'
+    3- icn icn icn icn:    a- change color | b- fliped on y-axis | c- have same 2 pseudo elements like li 'linked'
+header
+    4- logo & name:        are a link to the website 
+    5- li li li li li^ li: a- change color | b- 4 pseido elements for 4 sides 'linked'
+    6- li^:                have a window below it that its size is 0 and the 100% when hovering  
+    7- icn icn icn:        change color 'linked'
+    8- (n):                moves up a little and already a different color it's a notification number in a circle 'linked'
+window 
+i will leave it at the end 
+
+let's break down different layouts that we can do (flex, grid, divs)
+_______________________________________________________________________________________________________ */
+/* 
+
+SECOND PART (100% vh)
+----------------------------------------------------------------------------------------
+|               <p>Sale Up To 50% Biggest Discounts<a>shop now</a><p>                  | --> sale message 
+----------------------------------------------------------------------------------------  
+|                                                                                      | 
+|         -------------------------------                                              |  
+|         |                             |                                              |
+|         |         fashion sale        |                                              |  
+|         |      minimal menz style     |                                              |
+|         | Consectetur and adipisicing |                                              |
+|         | Laborum fuga incidunt labor |                  part of the image           | --> part pf promotional banner
+|         |                             |                                              |
+|         |        ------------         |                                              |
+|         |        | shop now |         |                                              |
+|         |        ------------         |                                              |
+|         -------------------------------                                              |
+|                                                                                      |
+----------------------------------------------------------------------------------------
+sale message
+    1- <a>shop now</a> : a- underline    | b- letter spacing inc
+promotional banner
+    1- fashion sale: different color
+    2- shop now:     a button that changes color to border and text 
+_____________________________________________________________________________________________________ */
