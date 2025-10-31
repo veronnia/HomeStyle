@@ -985,6 +985,73 @@ header a {
     height: 36vh;
 }
 
+.services-container {
+    width: 87%;
+    height: 100%;
+    margin: auto;
+}
+
+.services-parent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divv {
+    border: 1px solid rgb(0, 0, 0);
+    height: 52%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divv .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divv .p1{
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.divv .ico {
+    width: auto;
+    position: relative;
+    overflow: hidden;  /* new to me */
+    width: 63px;
+    height: 51px;
+}
+
+.divv .icn {
+    font-size: 50px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.divv .icn1 {
+    color: grey;
+}
+
+.divv .icn2 {
+    color:#719090;
+}
+
+.divv:hover .icn1{
+    transform: translate(0%, -120%);
+}
+
+.divv:not(:hover) .icn2{
+    transform: translate(0%, 120%);
+}
+
 footer {
     height: 76vh;
     background-color: rgb(23, 22, 19);
