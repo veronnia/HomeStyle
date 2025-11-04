@@ -189,6 +189,51 @@ header a {
     height: auto;
 }
 
+.window {
+    position: absolute;
+    height: 175px;
+    width: 290px;
+    background-color: #d2dada;
+    top: 45px;
+    left: -140%;
+    border-radius: 5px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 2px 0.5px rgb(122, 122, 122);
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.left {
+    width: 55%;
+}
+
+.window h4 {
+    font-weight: 300;
+    border-bottom: 1px dashed black;
+    width: fit-content;
+    padding: 2px;
+    margin-left: 12px;
+}
+
+.window ul {
+    margin-top: 10px;
+}
+
+.window li {
+    display: block;
+    margin: 10px 0px;
+}
+
+.downtown:hover .window{
+    transform: scale(1);
+}
+
+.window a {
+    text-transform: capitalize;
+}
+
 .lado {
     height: 2px;
     position: absolute;
@@ -371,7 +416,6 @@ header a {
 
 .categories {
     height: 70vh;
-    background-color: rgb(247, 247, 241);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,25 +439,17 @@ header a {
     height: 78%;
     background-color: #b8bcbc;
     position: relative;
+    overflow: hidden;
 }
 
-.categories .item1 {
-    background: url(../images/hero11.jpg) no-repeat bottom;
-    background-size: cover;
+.categories .item img {
+    width: 100%;
+    position: absolute;
+    transition: 0.75s;
 }
 
-.categories .item2 {
-    background: url(../images/hero11.jpg) no-repeat bottom;
-    background-size: cover;
-}
-
-.categories .item3 {
-    background: url(../images/hero11.jpg) no-repeat bottom;
-    background-size: cover;
-}
-
-.categories .item:hover {
-    transform: translateZ(50px);
+.categories .item:hover img {
+    transform: scale(1.1);
 }
 
 .categories-container {
@@ -425,30 +461,38 @@ header a {
 .grad {
     height: 100%;
     width: 100%;
-    background: -webkit-linear-gradient(bottom, black, white, white, white);
-    opacity: 0.5;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.655), rgba(0, 0, 0, 0.255),  rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    position: absolute;
 }
 
-.categories h2 {
-    font-size: 25px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    bottom: 50px;
+.categories h4 {
+    font-size: 27px;
+    margin-bottom: 22px;
+    color: white;
 }
 
 .categories a {
-    position: absolute;
     text-decoration: underline;
     color: #c3c3c3;
     font-size: 19px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    bottom: 10px;
 }
 
 .categories a:hover {
     letter-spacing: 1px;
+}
+
+.categories .box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    z-index: 2;
+    text-align: center;
+    transition: 0.75s;
+}
+
+.categories .item:not(:hover) .box  {
+    bottom: -8%;
 }
 
 .trending {
