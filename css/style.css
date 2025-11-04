@@ -1045,7 +1045,6 @@ header a {
 }
 
 .divv {
-    border: 1px solid rgb(0, 0, 0);
     height: 52%;
     width: 18%;
     display: flex;
@@ -1060,7 +1059,7 @@ header a {
     align-items: center;
 }
 
-.divv .p1{
+.divv .p1 {
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: capitalize;
