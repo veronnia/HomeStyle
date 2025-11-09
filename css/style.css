@@ -644,6 +644,11 @@ header a {
     transform: rotateY(90deg);
 }
 
+.trending .cat a {
+    color:#8ABABA;
+    font-weight: 900;
+}
+
 .testemonial {
     height: 60vh;
     display: flex;
