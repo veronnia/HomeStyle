@@ -649,6 +649,20 @@ header a {
     font-weight: 900;
 }
 
+.trending .divider {
+    position: relative;
+}
+
+.trending .line {
+    width: 63px;
+    height: 3px;
+    background-color: #8ABABA;
+    overflow: visible;
+    position: absolute;
+    right: 110px;
+    transform: translatey(-50%);
+}
+
 .testemonial {
     height: 60vh;
     display: flex;
